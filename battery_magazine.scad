@@ -1,9 +1,10 @@
 module mag(){
+    $fn=100;
     batt_dia = 15;
     batt_height = 49;
     mag_dia = 35;
-    spred = batt_dia/2+4;
-    center_bolt_hole = 3;
+    spred = batt_dia/2+3.75;
+    center_bolt_hole = 2;
     difference(){
         cylinder(r=mag_dia/2,h=batt_height*2,center=true);
         translate([spred,0,-batt_height]) cylinder(r=batt_dia/2,h=batt_height*2+2);
